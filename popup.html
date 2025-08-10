@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Window Resizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h4>Current Window Size</h4>
+    <div id="current-size">Loading...</div>
+
+    <h4>Width Size</h4>
+    <div class="input-container">
+      <input type="text" id="width" placeholder="Width (px or 'full')" />
+      <button id="fullWidthBtn" class="small-btn" title="Use full screen width">
+        Full
+      </button>
+    </div>
+    <div class="buttons-row">
+      <button id="resizeBtn">Resize</button>
+      <button id="fullScreenBtn" class="full-btn" title="Set to full screen">
+        Full Screen
+      </button>
+    </div>
+
+    <h4>Presets</h4>
+    <div class="preset-container">
+      <button class="preset" data-width="1920">Width: 1920</button>
+      <button class="preset" data-width="1366">Width: 1366</button>
+      <button class="preset" data-width="1200">Width: 1200</button>
+      <button class="preset" data-width="1024">Width: 1024</button>
+      <button class="preset" data-width="full">Full Width</button>
+    </div>
+
+    <div
+      id="debug-output"
+      style="margin-top: 10px; font-size: 11px; color: #666; display: none"
+    ></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

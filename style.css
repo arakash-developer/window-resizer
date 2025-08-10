@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 230px;
+  padding: 10px;
+}
+h4 {
+  margin: 8px 0 4px;
+}
+input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.input-container {
+  display: flex;
+  margin-bottom: 8px;
+  gap: 5px;
+}
+.input-container input {
+  flex: 1;
+  margin-bottom: 0;
+}
+.buttons-row {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.small-btn {
+  width: auto !important;
+  padding: 4px 8px !important;
+  font-size: 12px;
+  background-color: #007bff;
+}
+.small-btn:hover {
+  background-color: #0056b3;
+}
+.full-btn {
+  background-color: #9c27b0;
+}
+.full-btn:hover {
+  background-color: #7b1fa2;
+}
+button {
+  width: 100%;
+  padding: 6px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 6px;
+  border-radius: 3px;
+}
+button:hover {
+  background-color: #45a049;
+}
+.preset-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.preset-container button {
+  flex: 1 1 48%;
+  background-color: #2196f3;
+}
+.preset-container button:hover {
+  background-color: #1976d2;
+}
+#current-size {
+  font-size: 13px;
+  margin-bottom: 8px;
+  background: #f5f5f5;
+  padding: 6px;
+  border-radius: 4px;
+}

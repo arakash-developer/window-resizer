@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Window Resizer",
+  "version": "1.3",
+  "description": "Resize Chrome window with custom pixel size or presets and show current size.",
+  "permissions": ["windows", "tabs", "system.display"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Resize Window"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
